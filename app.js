@@ -44,7 +44,17 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('SenchaPhonegapDemoApp.view.Main'));
+
+        var mainView = { xtype: 'mainView' };
+        var cameraView = { xtype: 'camera' };
+       
+
+        Ext.Viewport.add([mainView,cameraView]);
+
+
+        SenchaPhonegapDemoApp.view.MenuSingleton.setMenu();
+
+        
     },
 
     onUpdated: function() {

@@ -1,50 +1,61 @@
 Ext.define('SenchaPhonegapDemoApp.view.Main', {
-    extend: 'Ext.tab.Panel',
-    xtype: 'main',
+    extend: 'Ext.Container',
+    alias: 'widget.mainView',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
+        'Ext.Toolbar',
+        'Ext.Button',
+        'Ext.Img',
+        'Ext.Menu'
     ],
+
     config: {
-        tabBarPosition: 'bottom',
-
+        itemId: 'mainView',
+        styleHtmlContent: true,
+        layout:'card',
         items: [
+        {
+            xtype : 'toolbar',
+            docked:'top',
+            title:'Phonegap Demo ',
+            items: [{
+            
+                
+                        xtype: 'button',
+                        itemId: 'menu',
+                        ui: 'action',
+                        iconCls: 'settings',
+                        text: ''
+            }]
+        },
+            
+             
             {
-                title: 'Welcome',
-                iconCls: 'home',
-
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
-                },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
-                ].join("")
-            },
+                xtype: 'image',
+                centered: false,
+                height: 137,
+                margin: '0 auto',
+                padding: '',
+                width: 150,
+                src: 'resources/images/logo.png'
+            }
+        ],
+        html: '<h3>Hello Welcome</h3> <p>It\'s a Demo app to show how to implement 
+         phonegap functions like Camera, Connections, Accelerometer....</p>',
+        listeners: [
             {
-                title: 'Get Started',
-                iconCls: 'action',
-
-                items: [
-                    {
-                        docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'Getting Started'
-                    },
-                    {
-                        xtype: 'video',
-                        url: 'http://av.vimeo.com/64284/137/87347327.mp4?token=1330978144_f9b698fea38cd408d52a2393240c896c',
-                        posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
-                    }
-                ]
+                fn: 'onLeftMenuTap',
+                event: 'tap',
+                delegate: '#menu'
             }
         ]
+    },
+
+    onLeftMenuTap: function(target) {
+        //<debug> 
+        console.log('on left menu tap');
+        //<debug> 
+        this.fireEvent('stoogleMenu',this);
     }
+
+});
 });

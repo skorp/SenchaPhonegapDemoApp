@@ -1,1 +1,4 @@
 phonegap.local.properties
+.sencha/*
+build/*
+phonegap/*
