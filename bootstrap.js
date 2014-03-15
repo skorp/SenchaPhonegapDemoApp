@@ -638,7 +638,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "SenchaPhonegapDemoApp.view.Main": []
+  "SenchaPhonegapDemoApp.controller.Main": [],
+  "SenchaPhonegapDemoApp.view.Camera": [],
+  "SenchaPhonegapDemoApp.view.Main": [],
+  "SenchaPhonegapDemoApp.view.MenuSingleton": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1357,7 +1360,14 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "SenchaPhonegapDemoApp.controller.Main": [],
+  "SenchaPhonegapDemoApp.view.Camera": [
+    "widget.camera"
+  ],
   "SenchaPhonegapDemoApp.view.Main": [
-    "widget.main"
+    "widget.mainView"
+  ],
+  "SenchaPhonegapDemoApp.view.MenuSingleton": [
+    "widget.menusngl"
   ]
 });

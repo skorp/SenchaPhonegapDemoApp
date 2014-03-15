@@ -39,8 +39,8 @@ Ext.define('SenchaPhonegapDemoApp.view.Main', {
                 src: 'resources/images/logo.png'
             }
         ],
-        html: '<h3>Hello Welcome</h3> <p>It\'s a Demo app to show how to implement 
-         phonegap functions like Camera, Connections, Accelerometer....</p>',
+        html: '<h3>Hello Welcome</h3> <p>It\'s a Demo app to show how to implement' +
+         'phonegap functions like Camera, Connections, Accelerometer....</p>',
         listeners: [
             {
                 fn: 'onLeftMenuTap',
@@ -51,11 +51,8 @@ Ext.define('SenchaPhonegapDemoApp.view.Main', {
     },
 
     onLeftMenuTap: function(target) {
-        //<debug> 
         console.log('on left menu tap');
-        //<debug> 
         this.fireEvent('stoogleMenu',this);
     }
 
-});
 });

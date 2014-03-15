@@ -18,6 +18,11 @@ Ext.application({
     ],
 
     views: [
+        'Main',
+        'MenuSingleton',
+        'Camera'
+    ],
+    controllers: [
         'Main'
     ],
 

@@ -28,16 +28,6 @@ Ext.define('SenchaPhonegapDemoApp.view.MenuSingleton',  {
                     this.loadView('camera');
                 }
             },
-            {
-                text: 'Camera',
-                iconCls: 'action',
-                scope: this,
-                handler: function() {
-                    
-                    this.loadView('camera');
-                }
-            },
-            
         ];
 
         var className = 'Ext.Menu';

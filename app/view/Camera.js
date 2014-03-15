@@ -37,9 +37,10 @@ Ext.define('SenchaPhonegapDemoApp.view.Camera', {
                 xtype: 'image',
                 docked: 'bottom',
                 height: '',
-                minHeight: '80%',
+                minHeight: '60%',
                 width: '100%',
-                src: 'http://placehold.it/300x300'
+                src: 'http://placehold.it/300x300',
+                margin: '20px'
             }
         ],
         listeners: [
@@ -52,9 +53,7 @@ Ext.define('SenchaPhonegapDemoApp.view.Camera', {
     },
 
     onBackButtonFn: function () {
-    	//<debug> 
     		console.log('Back Button ');
-    	//<debug> 
 
     	this.fireEvent('backToHome');
     }
