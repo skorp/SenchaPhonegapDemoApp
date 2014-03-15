@@ -13,22 +13,18 @@ Ext.define('SenchaPhonegapDemoApp.view.Main', {
         styleHtmlContent: true,
         layout:'card',
         items: [
-        {
-            xtype : 'toolbar',
-            docked:'top',
-            title:'Phonegap Demo ',
-            items: [{
-            
-                
-                        xtype: 'button',
-                        itemId: 'menu',
-                        ui: 'action',
-                        iconCls: 'settings',
-                        text: ''
-            }]
-        },
-            
-             
+            {
+                xtype : 'toolbar',
+                docked:'top',
+                title:'Phonegap Demo ',
+                items: [{
+                    xtype: 'button',
+                    itemId: 'menu',
+                    ui: 'action',
+                    iconCls: 'settings',
+                    text: ''
+                }]
+            },
             {
                 xtype: 'image',
                 centered: false,
@@ -49,10 +45,8 @@ Ext.define('SenchaPhonegapDemoApp.view.Main', {
             }
         ]
     },
-
     onLeftMenuTap: function(target) {
         console.log('on left menu tap');
         this.fireEvent('stoogleMenu',this);
     }
-
 });
