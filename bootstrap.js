@@ -16,7 +16,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "SenchaPhonegapDemoApp": "app"
+  "SenchaPhonegapDemoApp": "app",
+  "SenchaPhonegapDemoApp.view.MyDataItem": "app/view/MenuList.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -639,9 +640,13 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "SenchaPhonegapDemoApp.controller.Main": [],
+  "SenchaPhonegapDemoApp.model.TestModel": [],
+  "SenchaPhonegapDemoApp.store.TestStore": [],
   "SenchaPhonegapDemoApp.view.Camera": [],
   "SenchaPhonegapDemoApp.view.Main": [],
-  "SenchaPhonegapDemoApp.view.MenuSingleton": []
+  "SenchaPhonegapDemoApp.view.MenuList": [],
+  "SenchaPhonegapDemoApp.view.MenuSingleton": [],
+  "SenchaPhonegapDemoApp.view.MyDataItem": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1361,13 +1366,19 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "SenchaPhonegapDemoApp.controller.Main": [],
+  "SenchaPhonegapDemoApp.model.TestModel": [],
+  "SenchaPhonegapDemoApp.store.TestStore": [],
   "SenchaPhonegapDemoApp.view.Camera": [
     "widget.camera"
   ],
   "SenchaPhonegapDemoApp.view.Main": [
     "widget.mainView"
   ],
+  "SenchaPhonegapDemoApp.view.MenuList": [],
   "SenchaPhonegapDemoApp.view.MenuSingleton": [
     "widget.menusngl"
+  ],
+  "SenchaPhonegapDemoApp.view.MyDataItem": [
+    "widget.mydataitem"
   ]
 });

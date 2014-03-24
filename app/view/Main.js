@@ -11,7 +11,7 @@ Ext.define('SenchaPhonegapDemoApp.view.Main', {
     config: {
         itemId: 'mainView',
         styleHtmlContent: true,
-        layout:'card',
+        layout:'vbox',
         items: [
             {
                 xtype : 'toolbar',
@@ -28,15 +28,22 @@ Ext.define('SenchaPhonegapDemoApp.view.Main', {
             {
                 xtype: 'image',
                 centered: false,
-                height: 137,
-                margin: '0 auto',
+                height: 42,
+                margin: '30px auto',
                 padding: '',
                 width: 150,
                 src: 'resources/images/logo.png'
+
             }
         ],
-        html: '<h3>Hello Welcome</h3> <p>It\'s a Demo app to show how to implement' +
-         'phonegap functions like Camera, Connections, Accelerometer....</p>',
+        html: '<h3>Hello Welcome</h3> <p>It\'s a Demo app to show how to implement ' +
+         'phonegap functions like :'+
+         '<ul><li>Camera</li>'+
+         '<li>Connections</li>'+
+         '<li>Accelerometer</li>'+
+         '</ul>....'+
+
+         'with Sencha Touch Framework</p>',
         listeners: [
             {
                 fn: 'onLeftMenuTap',

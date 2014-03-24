@@ -1,6 +1,6 @@
 Ext.define('SenchaPhonegapDemoApp.view.MenuSingleton',  {
     extend: 'Ext.mixin.Observable',
-    requires: ['Ext.Menu'],
+    requires: ['Ext.Menu','SenchaPhonegapDemoApp.view.MenuList'],
     singleton: true,
     alias:'widget.menusngl',
 
@@ -19,15 +19,7 @@ Ext.define('SenchaPhonegapDemoApp.view.MenuSingleton',  {
 
     createMenu: function(side) {
         var items = [
-            {
-                text: 'Camera',
-                iconCls: 'camera',
-                scope: this,
-                handler: function() {
-                    
-                    this.loadView('camera');
-                }
-            },
+            { xclass: 'SenchaPhonegapDemoApp.view.MenuList',store: 'TestStore'}
         ];
 
         var className = 'Ext.Menu';
@@ -35,14 +27,6 @@ Ext.define('SenchaPhonegapDemoApp.view.MenuSingleton',  {
         return Ext.create(className, {
                 items: items
         });
-    },
-    loadView: function(view) {
-        Ext.Viewport.hideMenu('left');
-    	Ext.Viewport.animateActiveItem({ xtype: view }, this.leftSlide());
-    },
-    leftSlide : function (){
-        console.log('leftslide');
-        return {type:'slide',direction:'left'};
-    },
+    }
     
 });

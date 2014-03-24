@@ -23,8 +23,11 @@ Ext.application({
         'Camera'
     ],
     controllers: [
-        'Main'
+        'Main',
     ],
+
+    stores :['TestStore'],
+    models:['TestModel'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
