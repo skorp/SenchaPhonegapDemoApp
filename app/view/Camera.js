@@ -1,6 +1,6 @@
 Ext.define('SenchaPhonegapDemoApp.view.Camera', {
     extend: 'Ext.Panel',
-	alias: 'widget.camera',
+	alias: 'widget.cameraView',
     requires: [
         'Ext.TitleBar',
         'Ext.Button',
@@ -20,42 +20,54 @@ Ext.define('SenchaPhonegapDemoApp.view.Camera', {
                 		ui: 'back',
                 		text: 'Home',
                 		action: 'back'
-                	}
+                	},
+                    {
+                        xtype:'spacer'
+                    },
+                    {
+                        xtype    : 'button',
+                        itemId   : 'deleteBtn',
+                        iconCls  : 'delete',
+                        align    : 'right',
+                        //iconMask : true,
+                        ui       : 'decline',
+                        action   : 'delete',
+                        hidden   : true
+                    }
                 ]
             },
             {
-                xtype: 'button',
-                margin: '10px 0',
-                text: 'MyButton'
+                xtype    : 'button',
+                text     : 'Take photo',
+                itemId   : 'photoBtn',
+                margin   : '5 10 0 10',
+                iconMask : true,
+                ui       : 'confirm',
+                action   : 'capture'
             },
             {
-                xtype: 'button',
-                margin: '10px 0',
-                text: 'MyButton1'
+                xtype   : 'button',
+                text    : 'Open Photo',
+                itemId  : 'opPhoto',
+                margin   : '5 10 0 10',
+                iconMask: true,
+                action  : 'open'
             },
             {
-                xtype: 'image',
-                docked: 'bottom',
-                height: '',
-                minHeight: '60%',
-                width: '100%',
-                src: 'http://placehold.it/300x300',
-                margin: '20px'
+                xtype  : 'container',
+                layout : 'fit',
+                margin : '10 0 0 0',
+                itemId : 'imgContainer',
+                items  : [
+                    {
+                        xtype  : 'image',
+                        itemId : 'img',
+                        height : 300,
+                        src: "http://placehold.it/300x300",
+                    }
+                ]
             }
-        ],
-        listeners: [
-        	{
-        		fn: 		'onBackButtonFn',
-        		event: 		'tap',
-        		delegate: 	'#backButton'
-        	}
-        ]
-    },
-
-    onBackButtonFn: function () {
-    		console.log('Back Button ');
-
-    	this.fireEvent('backToHome');
+        ],  
+        
     }
-
 });

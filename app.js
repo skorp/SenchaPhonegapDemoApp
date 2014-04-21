@@ -20,14 +20,17 @@ Ext.application({
     views: [
         'Main',
         'MenuSingleton',
-        'Camera'
+        'Camera',
+        'Accelerometer'
     ],
     controllers: [
         'Main',
+        'CameraController',
+        'AccelerometerController'
     ],
 
-    stores :['TestStore'],
-    models:['TestModel'],
+    stores :['MenuStore'],
+    models:['MenuModel'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -53,9 +56,8 @@ Ext.application({
 
         // Initialize the main view
         var mainView = { xtype: 'mainView' };
-        var cameraView = { xtype: 'camera' };
        
-        Ext.Viewport.add([mainView,cameraView]);
+        Ext.Viewport.add([mainView]);
         SenchaPhonegapDemoApp.view.MenuSingleton.setMenu();
     },
 

@@ -3,3 +3,4 @@ phonegap.local.properties
 build/*
 phonegap/*
 touch/*
+resources/sass/.sass-cache

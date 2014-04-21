@@ -1,0 +1,217 @@
+<html manifest="" lang="en-US"><head id="ext-element-1">
+    <meta charset="UTF-8">
+    <title>SenchaPhonegapDemoApp</title>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #1985D0
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src=".sencha/app/microloader/development.js"></script>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable"><meta content="yes" name="apple-touch-fullscreen">
+<link rel="stylesheet" href="resources/css/cupertino.css"><script src="phonegap.js"></script>
+<script src="touch/sencha-touch.js"></script><script src="bootstrap.js"></script>
+<script src="app.js"></script>
+<meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<link href="resources/startup/320x460.jpg" rel="apple-touch-startup-image">
+<link href="resources/icons/Icon.png" rel="apple-touch-icon-precomposed">
+<script src="touch/src/event/Dispatcher.js?_dc=1395867814241" type="text/javascript"></script>
+<script src="touch/src/event/publisher/Dom.js?_dc=1395867814269" type="text/javascript"></script>
+<script src="touch/src/event/ListenerStack.js?_dc=1395867814294" type="text/javascript"></script>
+<script src="touch/src/event/Controller.js?_dc=1395867814295" type="text/javascript"></script>
+<script src="touch/src/event/publisher/Publisher.js?_dc=1395867814296" type="text/javascript"></script>
+<script src="touch/src/event/Dom.js?_dc=1395867814297" type="text/javascript"></script>
+<script src="touch/src/event/Event.js?_dc=1395867814303" type="text/javascript"></script>
+<script src="touch/src/event/publisher/TouchGesture.js?_dc=1395867814308" type="text/javascript"></script>
+<script src="touch/src/util/Point.js?_dc=1395867814312" type="text/javascript"></script>
+<script src="touch/src/event/Touch.js?_dc=1395867814312" type="text/javascript"></script>
+<script src="touch/src/AnimationQueue.js?_dc=1395867814313" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/Drag.js?_dc=1395867814319" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/SingleTouch.js?_dc=1395867814323" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/Touch.js?_dc=1395867814326" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/Recognizer.js?_dc=1395867814329" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/Tap.js?_dc=1395867814332" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/DoubleTap.js?_dc=1395867814336" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/LongPress.js?_dc=1395867814340" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/Swipe.js?_dc=1395867814343" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/Pinch.js?_dc=1395867814347" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/MultiTouch.js?_dc=1395867814350" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/Rotate.js?_dc=1395867814354" type="text/javascript"></script>
+<script src="touch/src/event/recognizer/EdgeSwipe.js?_dc=1395867814357" type="text/javascript"></script>
+<script src="touch/src/event/publisher/ComponentDelegation.js?_dc=1395867814361" type="text/javascript"></script>
+<script src="touch/src/Component.js?_dc=1395867814364" type="text/javascript"></script>
+<script src="touch/src/ComponentQuery.js?_dc=1395867814364" type="text/javascript"></script>
+<script src="touch/src/AbstractComponent.js?_dc=1395867814373" type="text/javascript"></script>
+<script src="touch/src/mixin/Traversable.js?_dc=1395867814374" type="text/javascript"></script>
+<script src="touch/src/ComponentManager.js?_dc=1395867814374" type="text/javascript"></script>
+<script src="touch/src/XTemplate.js?_dc=1395867814374" type="text/javascript"></script>
+<script src="touch/src/behavior/Translatable.js?_dc=1395867814374" type="text/javascript"></script>
+<script src="touch/src/behavior/Draggable.js?_dc=1395867814374" type="text/javascript"></script>
+<script src="touch/src/Evented.js?_dc=1395867814379" type="text/javascript"></script>
+<script src="touch/src/behavior/Behavior.js?_dc=1395867814382" type="text/javascript"></script>
+<script src="touch/src/util/Translatable.js?_dc=1395867814382" type="text/javascript"></script>
+<script src="touch/src/mixin/Mixin.js?_dc=1395867814383" type="text/javascript"></script>
+<script src="touch/src/Template.js?_dc=1395867814384" type="text/javascript"></script>
+<script src="touch/src/XTemplateCompiler.js?_dc=1395867814384" type="text/javascript"></script>
+<script src="touch/src/util/translatable/CssTransform.js?_dc=1395867814387" type="text/javascript"></script>
+<script src="touch/src/util/translatable/ScrollPosition.js?_dc=1395867814387" type="text/javascript"></script>
+<script src="touch/src/util/translatable/CssPosition.js?_dc=1395867814387" type="text/javascript"></script>
+<script src="touch/src/util/Draggable.js?_dc=1395867814392" type="text/javascript"></script>
+<script src="touch/src/util/translatable/Dom.js?_dc=1395867814393" type="text/javascript"></script>
+<script src="touch/src/mixin/Observable.js?_dc=1395867814397" type="text/javascript"></script>
+<script src="touch/src/util/Format.js?_dc=1395867814399" type="text/javascript"></script>
+<script src="touch/src/XTemplateParser.js?_dc=1395867814401" type="text/javascript"></script>
+<script src="touch/src/util/translatable/Abstract.js?_dc=1395867814401" type="text/javascript"></script>
+<script src="touch/src/fx/easing/Linear.js?_dc=1395867814406" type="text/javascript"></script>
+<script src="touch/src/DateExtras.js?_dc=1395867814408" type="text/javascript"></script>
+<script src="touch/src/fx/easing/Abstract.js?_dc=1395867814410" type="text/javascript"></script>
+<script src="touch/src/event/publisher/ComponentPaint.js?_dc=1395867814421" type="text/javascript"></script>
+<script src="touch/src/event/publisher/ElementPaint.js?_dc=1395867814426" type="text/javascript"></script>
+<script src="touch/src/util/PaintMonitor.js?_dc=1395867814430" type="text/javascript"></script>
+<script src="touch/src/TaskQueue.js?_dc=1395867814431" type="text/javascript"></script>
+<script src="touch/src/util/paintmonitor/CssAnimation.js?_dc=1395867814434" type="text/javascript"></script>
+<script src="touch/src/util/paintmonitor/OverflowChange.js?_dc=1395867814434" type="text/javascript"></script>
+<script src="touch/src/util/paintmonitor/Abstract.js?_dc=1395867814438" type="text/javascript"></script>
+<script src="touch/src/event/publisher/ElementSize.js?_dc=1395867814441" type="text/javascript"></script>
+<script src="touch/src/util/SizeMonitor.js?_dc=1395867814444" type="text/javascript"></script>
+<script src="touch/src/util/sizemonitor/Default.js?_dc=1395867814447" type="text/javascript"></script>
+<script src="touch/src/util/sizemonitor/Scroll.js?_dc=1395867814447" type="text/javascript"></script>
+<script src="touch/src/util/sizemonitor/OverflowChange.js?_dc=1395867814447" type="text/javascript"></script>
+<script src="touch/src/util/sizemonitor/Abstract.js?_dc=1395867814450" type="text/javascript"></script>
+<script src="touch/src/mixin/Templatable.js?_dc=1395867814454" type="text/javascript"></script>
+<script src="touch/src/log/Logger.js?_dc=1395867814458" type="text/javascript"></script>
+<script src="touch/src/log/Base.js?_dc=1395867814460" type="text/javascript"></script>
+<script src="touch/src/log/writer/Console.js?_dc=1395867814464" type="text/javascript"></script>
+<script src="touch/src/log/writer/Writer.js?_dc=1395867814467" type="text/javascript"></script>
+<script src="touch/src/log/formatter/Formatter.js?_dc=1395867814469" type="text/javascript"></script>
+<script src="touch/src/log/formatter/Default.js?_dc=1395867814473" type="text/javascript"></script>
+<script src="touch/src/fx/Runner.js?_dc=1395867814476" type="text/javascript"></script>
+<script src="touch/src/fx/runner/CssTransition.js?_dc=1395867814478" type="text/javascript"></script>
+<script src="touch/src/fx/runner/Css.js?_dc=1395867814482" type="text/javascript"></script>
+<script src="touch/src/fx/Animation.js?_dc=1395867814486" type="text/javascript"></script>
+<script src="touch/src/fx/animation/Slide.js?_dc=1395867814488" type="text/javascript"></script>
+<script src="touch/src/fx/animation/SlideOut.js?_dc=1395867814489" type="text/javascript"></script>
+<script src="touch/src/fx/animation/Fade.js?_dc=1395867814489" type="text/javascript"></script>
+<script src="touch/src/fx/animation/FadeOut.js?_dc=1395867814490" type="text/javascript"></script>
+<script src="touch/src/fx/animation/Flip.js?_dc=1395867814490" type="text/javascript"></script>
+<script src="touch/src/fx/animation/Pop.js?_dc=1395867814490" type="text/javascript"></script>
+<script src="touch/src/fx/animation/PopOut.js?_dc=1395867814490" type="text/javascript"></script>
+<script src="touch/src/fx/animation/Abstract.js?_dc=1395867814496" type="text/javascript"></script>
+<script src="touch/src/fx/State.js?_dc=1395867814503" type="text/javascript"></script>
+<script src="touch/src/viewport/Viewport.js?_dc=1395867814509" type="text/javascript"></script>
+<script src="touch/src/viewport/Ios.js?_dc=1395867814512" type="text/javascript"></script>
+<script src="touch/src/viewport/Android.js?_dc=1395867814513" type="text/javascript"></script>
+<script src="touch/src/viewport/WindowsPhone.js?_dc=1395867814513" type="text/javascript"></script>
+<script src="touch/src/viewport/Default.js?_dc=1395867814517" type="text/javascript"></script>
+<script src="touch/src/Container.js?_dc=1395867814522" type="text/javascript"></script>
+<script src="touch/src/LoadMask.js?_dc=1395867814523" type="text/javascript"></script>
+<script src="touch/src/layout/Card.js?_dc=1395867814523" type="text/javascript"></script>
+<script src="touch/src/util/InputBlocker.js?_dc=1395867814523" type="text/javascript"></script>
+<script src="touch/src/layout/Default.js?_dc=1395867814530" type="text/javascript"></script>
+<script src="touch/src/fx/layout/Card.js?_dc=1395867814530" type="text/javascript"></script>
+<script src="touch/src/Mask.js?_dc=1395867814531" type="text/javascript"></script>
+<script src="touch/src/layout/Abstract.js?_dc=1395867814538" type="text/javascript"></script>
+<script src="touch/src/layout/Box.js?_dc=1395867814538" type="text/javascript"></script>
+<script src="touch/src/layout/Fit.js?_dc=1395867814539" type="text/javascript"></script>
+<script src="touch/src/layout/FlexBox.js?_dc=1395867814539" type="text/javascript"></script>
+<script src="touch/src/layout/Float.js?_dc=1395867814539" type="text/javascript"></script>
+<script src="touch/src/layout/HBox.js?_dc=1395867814539" type="text/javascript"></script>
+<script src="touch/src/layout/VBox.js?_dc=1395867814540" type="text/javascript"></script>
+<script src="touch/src/layout/wrapper/BoxDock.js?_dc=1395867814540" type="text/javascript"></script>
+<script src="touch/src/layout/wrapper/Dock.js?_dc=1395867814540" type="text/javascript"></script>
+<script src="touch/src/layout/wrapper/Inner.js?_dc=1395867814540" type="text/javascript"></script>
+<script src="touch/src/ItemCollection.js?_dc=1395867814540" type="text/javascript"></script>
+<script src="touch/src/behavior/Scrollable.js?_dc=1395867814541" type="text/javascript"></script>
+<script src="touch/src/util/Wrapper.js?_dc=1395867814541" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Slide.js?_dc=1395867814543" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Cover.js?_dc=1395867814543" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Reveal.js?_dc=1395867814543" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Fade.js?_dc=1395867814543" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Flip.js?_dc=1395867814544" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Pop.js?_dc=1395867814544" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Scroll.js?_dc=1395867814544" type="text/javascript"></script>
+<script src="touch/src/scroll/View.js?_dc=1395867814559" type="text/javascript"></script>
+<script src="touch/src/util/MixedCollection.js?_dc=1395867814562" type="text/javascript"></script>
+<script src="touch/src/mixin/Bindable.js?_dc=1395867814565" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Style.js?_dc=1395867814567" type="text/javascript"></script>
+<script src="touch/src/fx/layout/card/Abstract.js?_dc=1395867814574" type="text/javascript"></script>
+<script src="touch/src/scroll/Scroller.js?_dc=1395867814578" type="text/javascript"></script>
+<script src="touch/src/scroll/Indicator.js?_dc=1395867814578" type="text/javascript"></script>
+<script src="touch/src/util/AbstractMixedCollection.js?_dc=1395867814581" type="text/javascript"></script>
+<script src="touch/src/util/Sortable.js?_dc=1395867814581" type="text/javascript"></script>
+<script src="touch/src/scroll/indicator/CssTransform.js?_dc=1395867814583" type="text/javascript"></script>
+<script src="touch/src/scroll/indicator/ScrollPosition.js?_dc=1395867814584" type="text/javascript"></script>
+<script src="touch/src/scroll/indicator/Rounded.js?_dc=1395867814584" type="text/javascript"></script>
+<script src="touch/src/scroll/indicator/Abstract.js?_dc=1395867814589" type="text/javascript"></script>
+<script src="touch/src/util/Sorter.js?_dc=1395867814594" type="text/javascript"></script>
+<script src="touch/src/fx/easing/BoundMomentum.js?_dc=1395867814596" type="text/javascript"></script>
+<script src="touch/src/fx/easing/EaseOut.js?_dc=1395867814596" type="text/javascript"></script>
+<script src="touch/src/util/Filter.js?_dc=1395867814597" type="text/javascript"></script>
+<script src="touch/src/fx/easing/Momentum.js?_dc=1395867814603" type="text/javascript"></script>
+<script src="touch/src/fx/easing/Bounce.js?_dc=1395867814603" type="text/javascript"></script>
+<script src="touch/src/app/Application.js?_dc=1395867814621" type="text/javascript"></script>
+<script src="touch/src/app/Controller.js?_dc=1395867814627" type="text/javascript"></script>
+<script src="touch/src/app/History.js?_dc=1395867814628" type="text/javascript"></script>
+<script src="touch/src/app/Profile.js?_dc=1395867814628" type="text/javascript"></script>
+<script src="touch/src/app/Router.js?_dc=1395867814628" type="text/javascript"></script>
+<script src="touch/src/app/Action.js?_dc=1395867814629" type="text/javascript"></script>
+<script src="touch/src/app/Route.js?_dc=1395867814633" type="text/javascript"></script>
+<script src="touch/src/MessageBox.js?_dc=1395867814658" type="text/javascript"></script>
+<script src="touch/src/Sheet.js?_dc=1395867814663" type="text/javascript"></script>
+<script src="touch/src/Toolbar.js?_dc=1395867814664" type="text/javascript"></script>
+<script src="touch/src/field/Text.js?_dc=1395867814664" type="text/javascript"></script>
+<script src="touch/src/field/TextArea.js?_dc=1395867814664" type="text/javascript"></script><script src="touch/src/Panel.js?_dc=1395867814668" type="text/javascript"></script><script src="touch/src/Button.js?_dc=1395867814668" type="text/javascript"></script><script src="touch/src/Title.js?_dc=1395867814670" type="text/javascript"></script><script src="touch/src/Spacer.js?_dc=1395867814670" type="text/javascript"></script><script src="touch/src/util/LineSegment.js?_dc=1395867814674" type="text/javascript"></script><script src="touch/src/field/TextAreaInput.js?_dc=1395867814677" type="text/javascript"></script><script src="touch/src/field/Field.js?_dc=1395867814680" type="text/javascript"></script><script src="touch/src/field/Input.js?_dc=1395867814682" type="text/javascript"></script><script src="touch/src/Decorator.js?_dc=1395867814687" type="text/javascript"></script><script src="app/model/MenuModel.js?_dc=1395867814698" type="text/javascript"></script><script src="app/view/Main.js?_dc=1395867814698" type="text/javascript"></script><script src="app/view/MenuSingleton.js?_dc=1395867814699" type="text/javascript"></script><script src="app/view/Camera.js?_dc=1395867814699" type="text/javascript"></script><script src="app/controller/Main.js?_dc=1395867814699" type="text/javascript"></script><script src="app/store/MenuStore.js?_dc=1395867814699" type="text/javascript"></script><script src="touch/src/Img.js?_dc=1395867814703" type="text/javascript"></script><script src="touch/src/Menu.js?_dc=1395867814704" type="text/javascript"></script><script src="touch/src/TitleBar.js?_dc=1395867814705" type="text/javascript"></script><script src="app/view/MenuList.js?_dc=1395867814706" type="text/javascript"></script><script src="touch/src/data/Model.js?_dc=1395867814709" type="text/javascript"></script><script src="touch/src/dataview/component/DataItem.js?_dc=1395867814711" type="text/javascript"></script><script src="touch/src/dataview/DataView.js?_dc=1395867814712" type="text/javascript"></script><script src="touch/src/data/Store.js?_dc=1395867814715" type="text/javascript"></script><script src="touch/src/mixin/Selectable.js?_dc=1395867814722" type="text/javascript"></script><script src="touch/src/data/StoreManager.js?_dc=1395867814722" type="text/javascript"></script><script src="touch/src/dataview/component/Container.js?_dc=1395867814722" type="text/javascript"></script><script src="touch/src/dataview/element/Container.js?_dc=1395867814723" type="text/javascript"></script><script src="touch/src/util/Collection.js?_dc=1395867814730" type="text/javascript"></script><script src="touch/src/data/Operation.js?_dc=1395867814733" type="text/javascript"></script><script src="touch/src/data/proxy/Memory.js?_dc=1395867814733" type="text/javascript"></script><script src="touch/src/util/Grouper.js?_dc=1395867814734" type="text/javascript"></script><script src="touch/src/data/proxy/Client.js?_dc=1395867814741" type="text/javascript"></script><script src="touch/src/mixin/Sortable.js?_dc=1395867814744" type="text/javascript"></script><script src="touch/src/mixin/Filterable.js?_dc=1395867814745" type="text/javascript"></script><script src="touch/src/data/proxy/Proxy.js?_dc=1395867814746" type="text/javascript"></script><script src="touch/src/data/reader/Json.js?_dc=1395867814752" type="text/javascript"></script><script src="touch/src/data/writer/Json.js?_dc=1395867814752" type="text/javascript"></script><script src="touch/src/data/Batch.js?_dc=1395867814752" type="text/javascript"></script><script src="touch/src/data/reader/Reader.js?_dc=1395867814757" type="text/javascript"></script><script src="touch/src/data/writer/Writer.js?_dc=1395867814758" type="text/javascript"></script><script src="touch/src/data/ResultSet.js?_dc=1395867814762" type="text/javascript"></script><script src="touch/src/data/Field.js?_dc=1395867814833" type="text/javascript"></script><script src="touch/src/data/identifier/Simple.js?_dc=1395867814834" type="text/javascript"></script><script src="touch/src/data/ModelManager.js?_dc=1395867814834" type="text/javascript"></script><script src="touch/src/data/proxy/Ajax.js?_dc=1395867814835" type="text/javascript"></script><script src="touch/src/data/association/HasMany.js?_dc=1395867814835" type="text/javascript"></script><script src="touch/src/data/association/BelongsTo.js?_dc=1395867814835" type="text/javascript"></script><script src="touch/src/data/association/HasOne.js?_dc=1395867814835" type="text/javascript"></script><script src="touch/src/data/Errors.js?_dc=1395867814835" type="text/javascript"></script><script src="touch/src/AbstractManager.js?_dc=1395867814924" type="text/javascript"></script><script src="touch/src/data/proxy/Server.js?_dc=1395867814925" type="text/javascript"></script><script src="touch/src/Ajax.js?_dc=1395867814925" type="text/javascript"></script><script src="touch/src/data/association/Association.js?_dc=1395867814926" type="text/javascript"></script><script src="touch/src/util/Inflector.js?_dc=1395867814926" type="text/javascript"></script><script src="touch/src/data/Types.js?_dc=1395867814928" type="text/javascript"></script><script src="touch/src/data/SortTypes.js?_dc=1395867814928" type="text/javascript"></script><script src="touch/src/data/Error.js?_dc=1395867814929" type="text/javascript"></script><script src="touch/src/data/Connection.js?_dc=1395867814936" type="text/javascript"></script>
+<script src="touch/src/data/Request.js?_dc=1395867814938" type="text/javascript"></script>
+<script src="touch/src/util/HashMap.js?_dc=1395867814942" type="text/javascript"></script>
+<script src="touch/src/data/ArrayStore.js?_dc=1395867815012" type="text/javascript"></script>
+<script src="touch/src/data/reader/Array.js?_dc=1395867815045" type="text/javascript"></script></head>
+<body class="x-desktop x-macos x-firefox x-landscape" style="width: 100% ! important; height: 100% ! important;" id="ext-element-3">
+    
+
+
+<div style="width: 100% ! important; height: 100% ! important;" id="ext-viewport" class="x-container x-sized"><div id="ext-element-4" class="x-body"><div id="ext-element-2" class="x-inner x-layout-card"><div id="ext-mainView-1" class="x-container x-layout-card-item x-sized"><div id="ext-element-15" class="x-dock x-dock-vertical x-sized"><div id="ext-toolbar-1" class="x-container x-toolbar-dark x-toolbar x-stretched x-dock-item x-docked-top"><div id="ext-element-13" class="x-body"><div id="ext-element-14" class="x-center"><div style="z-index: 4 ! important;" id="ext-title-1" class="x-unsized x-title x-floating"><div id="ext-element-12" class="x-innerhtml">Phonegap Sencha Demo </div></div></div><div id="ext-element-8" class="x-inner x-toolbar-inner x-horizontal x-align-center x-pack-start x-layout-box"><div id="ext-button-1" class="x-button x-iconalign-center x-button-action x-layout-box-item x-stretched"><span class="x-badge" id="ext-element-9" style="display: none;"></span><span id="ext-element-11" class="x-button-icon x-shown settings"></span><span class="x-button-label" id="ext-element-10" style="display: none ! important;"></span></div></div></div></div><div id="ext-element-16" class="x-dock-body"><div id="ext-element-7" class="x-inner x-vertical x-align-stretch x-pack-start x-layout-box"><div style="height: 42px ! important; margin: 30px auto ! important; width: 150px ! important; background-image: url(&quot;http://server.local/sencha/SenchaPhonegapDemoApp/resources/images/logo.png&quot;);" id="ext-image-1" class="x-img x-img-image x-img-background x-sized x-paint-monitored x-size-monitored x-layout-box-item"><div class="x-paint-monitor overflowchange"></div><div class="x-size-monitors overflowchanged"><div class="expand"><div style="width: 151px; height: 43px;"></div></div><div class="shrink"><div style="width: 150px; height: 42px;"></div></div></div></div><div id="ext-element-17" class="x-innerhtml x-html"><h3>Hello Welcome</h3> <p>It's a Demo app to show how to implement phonegap functions like :</p><ul><li>Camera</li><li>Connections</li><li>Accelerometer</li></ul>....with Sencha Touch Framework<p></p></div></div></div></div></div><div style="display: none ! important;" id="ext-camera-1" class="x-container x-panel x-layout-card-item x-sized x-item-hidden"><div id="ext-element-28" class="x-dock x-dock-vertical x-sized"><div id="ext-titlebar-1" class="x-container x-toolbar-dark x-toolbar x-stretched x-paint-monitored x-navigation-bar x-dock-item x-docked-top"><div id="ext-element-24" class="x-body"><div id="ext-element-25" class="x-center"><div style="z-index: 8 ! important;" id="ext-title-2" class="x-unsized x-title x-floating"><div id="ext-element-23" class="x-innerhtml">PhoneGap Camera</div></div></div><div id="ext-element-20" class="x-inner x-toolbar-inner x-horizontal x-align-stretch x-pack-start x-layout-box"><div style="position: relative;" id="ext-container-1" class="x-container x-size-monitored x-paint-monitored x-layout-box-item x-stretched"><div id="ext-element-21" class="x-inner x-horizontal x-align-center x-pack-start x-layout-box"><div id="ext-button-2" class="x-button x-button-back x-layout-box-item x-stretched"><span class="x-badge" style="display: none;"></span><span id="ext-element-26" class="x-button-icon x-hidden"></span><span id="ext-element-27" class="x-button-label" style="">Home</span></div></div><div class="x-size-monitors overflowchanged"><div class="expand"><div></div></div><div class="shrink"><div></div></div></div><div class="x-paint-monitor overflowchange"></div></div><div style="position: relative; flex: 1 0 0px;" id="ext-component-1" class="x-size-monitored x-paint-monitored x-layout-box-item x-flexed x-stretched"><div class="x-size-monitors overflowchanged"><div class="expand"><div></div></div><div class="shrink"><div></div></div></div><div class="x-paint-monitor overflowchange"></div></div><div style="position: relative;" id="ext-container-2" class="x-container x-size-monitored x-paint-monitored x-layout-box-item x-stretched"><div id="ext-element-22" class="x-inner"></div><div class="x-size-monitors overflowchanged"><div class="expand"><div></div></div><div class="shrink"><div></div></div></div><div class="x-paint-monitor overflowchange"></div></div></div></div><div class="x-paint-monitor overflowchange"></div></div><div id="ext-element-29" class="x-dock-body"><div id="ext-element-18" class="x-inner x-panel-inner"><div style="margin: 10px 0px ! important;" id="ext-button-3" class="x-unsized x-button-normal x-button"><span class="x-badge" style="display: none;"></span><span id="ext-element-30" class="x-button-icon x-hidden"></span><span id="ext-element-31" class="x-button-label" style="">MyButton</span></div><div style="margin: 10px 0px ! important;" id="ext-button-4" class="x-unsized x-button-normal x-button"><span class="x-badge" style="display: none;"></span><span id="ext-element-32" class="x-button-icon x-hidden"></span><span id="ext-element-33" class="x-button-label" style="">MyButton1</span></div></div></div><div style="min-height: 60% ! important; width: 100% ! important; margin: 20px ! important; background-image: url(&quot;http://placehold.it/300x300&quot;);" id="ext-image-2" class="x-img x-img-image x-stretched x-paint-monitored x-size-monitored x-img-background x-dock-item x-docked-bottom"><div class="x-paint-monitor overflowchange"></div><div class="x-size-monitors overflowchanged"><div class="expand"><div></div></div><div class="shrink"><div></div></div></div></div></div><div id="ext-element-19" style="display: none;" class="x-anchor"></div></div></div></div></div></body></html>

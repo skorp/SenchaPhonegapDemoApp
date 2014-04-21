@@ -16,17 +16,13 @@ Ext.define('SenchaPhonegapDemoApp.view.MenuSingleton',  {
 			reveal: true
 		});
     },
-
     createMenu: function(side) {
         var items = [
-            { xclass: 'SenchaPhonegapDemoApp.view.MenuList',store: 'TestStore'}
+            { xclass: 'SenchaPhonegapDemoApp.view.MenuList',store: 'MenuStore'}
         ];
-
         var className = 'Ext.Menu';
-
         return Ext.create(className, {
                 items: items
         });
     }
-    
 });

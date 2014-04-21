@@ -1,9 +1,7 @@
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DATA ITEM
-
 Ext.define('SenchaPhonegapDemoApp.view.MyDataItem', {
     extend: 'Ext.dataview.component.DataItem',
     requires: ['Ext.Button'],
-    alias:'widget.mydataitem',
+    alias:'widget.mymenudataitem',
     config: {
         nameButton: true,
         defaults: {
@@ -45,15 +43,14 @@ Ext.define('SenchaPhonegapDemoApp.view.MyDataItem', {
     
 });
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DATA VIEW
-
 Ext.define('SenchaPhonegapDemoApp.view.MenuList', {
     extend: 'Ext.dataview.DataView',
     fullscreen: true,
     config: {
-        defaultType: 'mydataitem',
+        defaultType: 'mymenudataitem',
         useComponents: true,
-        height: '100%'
+        height: '100%',
+        width: '190px'
     }
 });
 

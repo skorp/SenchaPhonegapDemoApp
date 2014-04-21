@@ -34,6 +34,7 @@ Ext.define('SenchaPhonegapDemoApp.controller.Main', {
         this.gotoMainView();
     },
     gotoMainView: function() {
+        Ext.Viewport.remove(Ext.Viewport.getActiveItem(),true);
         Ext.Viewport.animateActiveItem(this.getMainView(),this.getSlideRightTransition());
     },
     getSlideLeftTransition2: function() {

@@ -7,22 +7,19 @@ Ext.define('SenchaPhonegapDemoApp.view.Main', {
         'Ext.Img',
         'Ext.Menu'
     ],
-
     config: {
-        itemId: 'mainView',
         styleHtmlContent: true,
-        layout:'vbox',
         items: [
             {
                 xtype : 'toolbar',
                 docked:'top',
-                title:'Phonegap Demo ',
+                title:'Phonegap Sencha Demo ',
                 items: [{
                     xtype: 'button',
                     itemId: 'menu',
                     ui: 'action',
                     iconCls: 'settings',
-                    text: ''
+                    
                 }]
             },
             {
