@@ -11,6 +11,11 @@ Ext.define('SenchaPhonegapDemoApp.store.MenuStore', {
             icon: 'camera',
             view: 'accelerometerView',
             text: 'Accelerometer'
+        },
+        {
+            icon: "camera", 
+            view: "captureView",
+            text: 'Capture'
         }
         ],
         model: 'SenchaPhonegapDemoApp.model.MenuModel',

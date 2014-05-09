@@ -21,12 +21,14 @@ Ext.application({
         'Main',
         'MenuSingleton',
         'Camera',
-        'Accelerometer'
+        'Accelerometer',
+        'Capture'
     ],
     controllers: [
         'Main',
         'CameraController',
-        'AccelerometerController'
+        'AccelerometerController',
+        'CaptureController'
     ],
 
     stores :['MenuStore'],

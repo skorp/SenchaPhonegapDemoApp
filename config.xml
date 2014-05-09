@@ -49,6 +49,8 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="http://127.0.0.1*" />
     <access origin="http://placehold.it*" />
-    <gap:plugin name="org.apache.cordova.camera" version="0.2.4" />
+    <gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
     <gap:plugin name="org.apache.cordova.device-motion" version="0.2.6" />
+    <gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
+    <gap:plugin name="org.apache.cordova.file" version="1.0.1" />
 </widget>

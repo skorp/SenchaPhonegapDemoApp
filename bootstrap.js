@@ -641,11 +641,13 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "SenchaPhonegapDemoApp.controller.AccelerometerController": [],
   "SenchaPhonegapDemoApp.controller.CameraController": [],
+  "SenchaPhonegapDemoApp.controller.CaptureController": [],
   "SenchaPhonegapDemoApp.controller.Main": [],
   "SenchaPhonegapDemoApp.model.MenuModel": [],
   "SenchaPhonegapDemoApp.store.MenuStore": [],
   "SenchaPhonegapDemoApp.view.Accelerometer": [],
   "SenchaPhonegapDemoApp.view.Camera": [],
+  "SenchaPhonegapDemoApp.view.Capture": [],
   "SenchaPhonegapDemoApp.view.Main": [],
   "SenchaPhonegapDemoApp.view.MenuList": [],
   "SenchaPhonegapDemoApp.view.MenuSingleton": [],
@@ -1370,6 +1372,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.WindowsPhone": [],
   "SenchaPhonegapDemoApp.controller.AccelerometerController": [],
   "SenchaPhonegapDemoApp.controller.CameraController": [],
+  "SenchaPhonegapDemoApp.controller.CaptureController": [],
   "SenchaPhonegapDemoApp.controller.Main": [],
   "SenchaPhonegapDemoApp.model.MenuModel": [],
   "SenchaPhonegapDemoApp.store.MenuStore": [],
@@ -1378,6 +1381,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "SenchaPhonegapDemoApp.view.Camera": [
     "widget.cameraView"
+  ],
+  "SenchaPhonegapDemoApp.view.Capture": [
+    "widget.captureView"
   ],
   "SenchaPhonegapDemoApp.view.Main": [
     "widget.mainView"
