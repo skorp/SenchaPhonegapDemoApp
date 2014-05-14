@@ -21,3 +21,12 @@ Sencha + Phonegap Demo app
 ###bugs:
 * We will change all icons at the end.
 * Capture Video is not saving the file on IOS
+
+###added PhoneGap Api's
+* Camera
+* Accelerometer
+* Capture (captureVideo)
+
+
+###next todo:
+* recording and playing audio files

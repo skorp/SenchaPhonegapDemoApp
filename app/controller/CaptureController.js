@@ -12,29 +12,38 @@ Ext.define('SenchaPhonegapDemoApp.controller.CaptureController', {
 		refs: {
 			btnAudioRecording : '#btnAudioRecord',
 			btnVideoRecording : '#btnVideoRecord',
+			spnLimit	: '#spinnerLimit',
+			spnDuration: '#spinnerDuration'
 		}
 	},
 	tapAudioRecording : function ()  {
-		var AudioRecording = this.getBtnAudioRecording();
-		console.log('tapaudioRecording');
-
-		navigator.device.capture.captureVideo(captureSuccess, captureError);
-
-		function captureSuccess(media) {
-			console.log(media);
-		}
-		function captureError(fail) {
-			console.log(fail);
-		}
-
-		AudioRecording.setUi('decline').setText('Stop Recording');
+		// var AudioRecording = this.getBtnAudioRecording();
+		// console.log('tapaudioRecording');
+		//
+		// navigator.device.capture.captureVideo(captureSuccess, captureError);
+		//
+		// function captureSuccess(media) {
+		// 	console.log(media);
+		// }
+		// function captureError(fail) {
+		// 	console.log(fail);
+		// }
+		//
+		// AudioRecording.setUi('decline').setText('Stop Recording');
 	},
 	tapVideoRecording : function () {
 		console.log('video recording');
 
-		var VideoRecording = this.getBtnVideoRecording();
+		var VideoRecording = this.getBtnVideoRecording(),
+				spnLimit = this.getSpnLimit(),
+				spnDuration = this.getSpnDuration();
 
-		navigator.device.capture.captureVideo(captureSuccess, captureError,{duration:5});
+		var cpVideoConfig = {
+			duration: spnDuration.getValue() || 1,
+			limit : spnLimit.getValue() || 1
+		}
+
+		navigator.device.capture.captureVideo(captureSuccess, captureError,cpVideoConfig);
 
 		function captureSuccess(media) {
 			Ext.Msg.alert(media);
