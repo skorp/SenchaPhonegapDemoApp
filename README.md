@@ -1,7 +1,7 @@
 SenchaPhonegapDemoApp
 =====================
 
-Sencha + Phonegap Demo app
+Sencha + PhoneGap Demo app
 
 
 
@@ -28,5 +28,5 @@ Sencha + Phonegap Demo app
 * Capture (captureVideo)
 
 
-###next todo:
+###next:
 * recording and playing audio files
